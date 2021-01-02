@@ -1,29 +1,34 @@
 <template>
   <div id="content">
-    <div style="margin-top: 20px;">
-        <p class="titletxt">Redes Sociais</p>
-        <img v-for="(rede,i) in redes" :key="i"  :src="rede" style="width: 50px; margin: 10px; cursor: pointer;">
+    <div style="margin-top: 20px">
+      <p class="titletxt">Redes Sociais</p>
+      <img
+        v-for="(rede, i) in redes"
+        :key="i"
+        :src="rede"
+        style="width: 50px; margin: 10px; cursor: pointer"
+      />
     </div>
     <p class="subtxt">
-        SAC - contato@procurabooks.com.br <br>
-        &copy;ProcuraBooks
+      SAC - contato@procurabooks.com.br <br />
+      &copy;ProcuraBooks
     </p>
   </div>
 </template>
 
 <script>
 export default {
-    data() {
-        return {
-            redes: [
-                require('./img/twitter.png'),
-                require('./img/facebook.png'),
-                require('./img/instagram.png'),
-                require('./img/youtube.png'),
-                require('./img/linkedin.png')
-            ]
-        }
-    }
+  data() {
+    return {
+      redes: [
+        require("./img/twitter.png"),
+        require("./img/facebook.png"),
+        require("./img/instagram.png"),
+        require("./img/youtube.png"),
+        require("./img/linkedin.png"),
+      ],
+    };
+  },
 };
 </script>
 

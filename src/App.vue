@@ -19,8 +19,8 @@ import header from "./components/header";
 import sobre from "./components/sobre";
 import catalogo from "./components/catalogo";
 import funcionarios from "./components/funcinarios";
-import contato from "./components/contato"
-import footer from "./components/footer"
+import contato from "./components/contato";
+import footer from "./components/footer";
 export default {
   name: "App",
   components: {
@@ -30,7 +30,7 @@ export default {
     appCatalogo: catalogo,
     appFuncionarios: funcionarios,
     appContato: contato,
-    appFooter: footer
+    appFooter: footer,
   },
 };
 </script>

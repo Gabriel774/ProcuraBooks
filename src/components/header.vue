@@ -52,6 +52,13 @@
         </h2>
       </div>
     </div>
+    <div
+      class="return"
+      :class="{ invisible: headerFade }"
+      @click="$vuetify.goTo('#inicio')"
+    >
+      <v-icon large> mdi-arrow-up-bold </v-icon>
+    </div>
   </div>
 </template>
 
@@ -195,6 +202,23 @@ h2 {
   background-color: rgb(185, 185, 185);
 }
 
+.return {
+  transition: all 0.2s;
+  opacity: 1;
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  padding: 10px;
+  background: #ff8331;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+}
+
+.invisible {
+  opacity: 0;
+  transition: all 0.2s;
+}
 @media (max-width: 970px) {
   #links {
     display: none;
