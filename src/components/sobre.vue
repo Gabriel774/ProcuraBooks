@@ -41,7 +41,7 @@ export default {
         { msg: "Descontos exclusivos para estudantes", src: require('./img/iStock-487922329_master.jpg') },
         { msg: "Venha redescobrir o prazer em ler", src: require('./img/pexels-photo-3747468.jpeg') },
       ],
-      isMobile: ''
+      isMobile: null
     };
   },
   mounted(){
@@ -73,6 +73,7 @@ export default {
   font-size: 38pt;
   background: rgba(0, 0, 0, 0.377);
   padding: 10px;
+  margin: 10px;
   border-radius: 5px;
   text-align: center;
 }

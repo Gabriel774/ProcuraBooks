@@ -2,11 +2,13 @@
   <div id="inicio">
     <h1 class="titletxt">ProcuraBooks</h1>
     <h1 class="subtitle">O lar dos Books</h1>
-  </div>
+  </div> 
 </template>
 
 <script>
-export default {};
+export default {
+  
+};
 </script>
 
 <style scoped>
